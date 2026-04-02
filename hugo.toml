@@ -1,7 +1,8 @@
-baseURL = 'https://mcasrom.github.io/' # Cambia esto por tu URL real luego
+baseURL = 'https://mcasrom.github.io/australia-blog/'
 languageCode = 'es-es'
 title = 'M. Castillo - Australia 2026'
 theme = 'PaperMod'
+publishDir = 'docs'
 
 [params]
     defaultTheme = "auto"
