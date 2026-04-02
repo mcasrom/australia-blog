@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Linux on M. Castillo - Australia 2026</title><link>https://mcasrom.github.io/australia-blog/tags/linux/</link><description>Recent content in Linux on M. Castillo - Australia 2026</description><generator>Hugo</generator><language>es-es</language><lastBuildDate>Thu, 02 Apr 2026 17:30:00 +0200</lastBuildDate><atom:link href="https://mcasrom.github.io/australia-blog/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Bitácora Técnica: Despliegue ODROID C2</title><link>https://mcasrom.github.io/australia-blog/posts/preparativos-tecnicos-australia/</link><pubDate>Thu, 02 Apr 2026 17:30:00 +0200</pubDate><guid>https://mcasrom.github.io/australia-blog/posts/preparativos-tecnicos-australia/</guid><description>&lt;h2 id="guía-rápida-de-comandos-cli">Guía Rápida de Comandos (CLI)&lt;/h2>
+&lt;p>Para no olvidar la gestión del sistema durante el viaje, estos son los alias activos:&lt;/p>
+&lt;h3 id="red-y-seguridad">Red y Seguridad&lt;/h3>
+&lt;ul>
+&lt;li>&lt;code>vpn on&lt;/code> : Levanta el túnel WireGuard (Cloudflare).&lt;/li>
+&lt;li>&lt;code>vpn off&lt;/code> : Apaga el túnel.&lt;/li>
+&lt;li>&lt;code>vpn status&lt;/code> : Muestra el tráfico y handshake.&lt;/li>
+&lt;/ul>
+&lt;h3 id="gestión-del-blog">Gestión del Blog&lt;/h3>
+&lt;ol>
+&lt;li>&lt;strong>Previsualizar local:&lt;/strong> &lt;code>bash ~/travel-station/scripts/preview_blog.sh&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Publicar cambios:&lt;/strong> &lt;code>bash ~/travel-station/scripts/deploy_blog.sh&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;h2 id="estado-del-hardware">Estado del Hardware&lt;/h2>
+&lt;p>El &lt;strong>Guardián&lt;/strong> (Python) reporta salud en: &lt;code>~/travel-station/guardian/logs/health.log&lt;/code>.&lt;/p>
+&lt;hr>
+&lt;p>&lt;strong>M. Castillo - Privacy Tools&lt;/strong>
+2026&lt;/p></description></item></channel></rss>

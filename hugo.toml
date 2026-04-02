@@ -7,3 +7,6 @@ publishDir = 'docs'
 [params]
     defaultTheme = "auto"
     showCodeCopyButtons = true
+
+[markup.goldmark.renderer]
+    unsafe = true # Por si metes HTML a mano en los posts
