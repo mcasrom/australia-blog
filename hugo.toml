@@ -1,0 +1,8 @@
+baseURL = 'https://mcasrom.github.io/' # Cambia esto por tu URL real luego
+languageCode = 'es-es'
+title = 'M. Castillo - Australia 2026'
+theme = 'PaperMod'
+
+[params]
+    defaultTheme = "auto"
+    showCodeCopyButtons = true
