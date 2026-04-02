@@ -1,0 +1,15 @@
+:root {
+    --theme: rgb(240, 245, 255); /* Azul muy suave de fondo */
+    --entry: rgb(255, 255, 255);
+    --primary: rgb(0, 51, 153);  /* Azul corporativo/IE para textos */
+    --secondary: rgb(100, 100, 100);
+    --tertiary: rgb(200, 200, 200);
+    --content: rgb(30, 30, 30);
+    --code-block-bg: rgb(230, 235, 245);
+    --border: rgb(220, 225, 235);
+}
+
+/* Forzar el fondo del body */
+body {
+    background: var(--theme);
+}

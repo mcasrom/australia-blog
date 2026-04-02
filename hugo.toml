@@ -5,8 +5,12 @@ theme = 'PaperMod'
 publishDir = 'docs'
 
 [params]
-    defaultTheme = "auto"
+    defaultTheme = "light" # Forzamos luz para controlar el color
     showCodeCopyButtons = true
+    
+    [params.assets]
+        # Inyectamos el CSS para el tono azul directamente
+        customCSS = ["css/custom.css"]
 
 [markup.goldmark.renderer]
-    unsafe = true # Por si metes HTML a mano en los posts
+    unsafe = true
