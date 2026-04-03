@@ -1,4 +1,65 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>M. Castillo - Australia 2026</title><link>https://mcasrom.github.io/australia-blog/</link><description>Recent content on M. Castillo - Australia 2026</description><generator>Hugo</generator><language>es-es</language><lastBuildDate>Thu, 02 Apr 2026 17:30:00 +0200</lastBuildDate><atom:link href="https://mcasrom.github.io/australia-blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Bitácora Técnica: Despliegue ODROID C2</title><link>https://mcasrom.github.io/australia-blog/posts/preparativos-tecnicos-australia/</link><pubDate>Thu, 02 Apr 2026 17:30:00 +0200</pubDate><guid>https://mcasrom.github.io/australia-blog/posts/preparativos-tecnicos-australia/</guid><description>&lt;h2 id="guía-rápida-de-comandos-cli">Guía Rápida de Comandos (CLI)&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>M. Castillo - Australia 2026</title><link>https://mcasrom.github.io/australia-blog/</link><description>Recent content on M. Castillo - Australia 2026</description><generator>Hugo</generator><language>es-es</language><lastBuildDate>Fri, 03 Apr 2026 16:30:00 +0200</lastBuildDate><atom:link href="https://mcasrom.github.io/australia-blog/index.xml" rel="self" type="application/rss+xml"/><item><title>ODROID C2: Evaluación de Hardware en Entornos DietPi</title><link>https://mcasrom.github.io/australia-blog/posts/odroid_c2_hardware/</link><pubDate>Fri, 03 Apr 2026 16:30:00 +0200</pubDate><guid>https://mcasrom.github.io/australia-blog/posts/odroid_c2_hardware/</guid><description>&lt;h2 id="introducción">Introducción&lt;/h2>
+&lt;p>Tras varios años utilizando el &lt;strong>ODROID C2&lt;/strong> como nodo ligero para tareas de automatización, OSINT y despliegues remotos, este informe resume los puntos fuertes y débiles del dispositivo cuando opera bajo &lt;strong>DietPi&lt;/strong>, un sistema optimizado para hardware limitado.&lt;/p>
+&lt;hr>
+&lt;h2 id="aspectos-positivos">Aspectos Positivos&lt;/h2>
+&lt;h3 id="-eficiencia-energética">⚡ Eficiencia Energética&lt;/h3>
+&lt;ul>
+&lt;li>Consumo extremadamente bajo incluso bajo carga sostenida.&lt;/li>
+&lt;li>Ideal para despliegues 24/7 en viajes o ubicaciones remotas.&lt;/li>
+&lt;/ul>
+&lt;h3 id="-estabilidad-térmica">🧊 Estabilidad Térmica&lt;/h3>
+&lt;ul>
+&lt;li>El SoC Amlogic S905 mantiene temperaturas controladas sin necesidad de ventilación activa.&lt;/li>
+&lt;li>Perfecto para entornos silenciosos o cajas cerradas.&lt;/li>
+&lt;/ul>
+&lt;h3 id="-compatibilidad-con-dietpi">🧩 Compatibilidad con DietPi&lt;/h3>
+&lt;ul>
+&lt;li>DietPi ofrece:
+&lt;ul>
+&lt;li>Arranque rápido.&lt;/li>
+&lt;li>Servicios optimizados.&lt;/li>
+&lt;li>Scripts ligeros que reducen la carga del sistema.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>La gestión de paquetes y servicios es más eficiente que en distros completas.&lt;/li>
+&lt;/ul>
+&lt;h3 id="-ideal-para-tareas-de-seguridad-y-automatización">🔐 Ideal para Tareas de Seguridad y Automatización&lt;/h3>
+&lt;ul>
+&lt;li>WireGuard funciona de forma estable.&lt;/li>
+&lt;li>Scripts de mantenimiento y monitorización se ejecutan sin problemas.&lt;/li>
+&lt;li>Perfecto para dashboards OSINT ligeros, scraping periódico y agentes de supervisión.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="aspectos-negativos">Aspectos Negativos&lt;/h2>
+&lt;h3 id="-limitaciones-de-cpu">🐢 Limitaciones de CPU&lt;/h3>
+&lt;ul>
+&lt;li>El Cortex‑A53 cumple, pero se queda corto en:
+&lt;ul>
+&lt;li>Procesamiento intensivo.&lt;/li>
+&lt;li>Modelos ML.&lt;/li>
+&lt;li>Dashboards pesados o con muchas visualizaciones.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="-io-dependiente-de-la-microsd">💾 I/O Dependiente de la microSD&lt;/h3>
+&lt;ul>
+&lt;li>El rendimiento del sistema depende en exceso de la calidad de la tarjeta microSD.&lt;/li>
+&lt;li>Riesgo de corrupción si no se usan tarjetas de gama alta o si hay cortes de energía.&lt;/li>
+&lt;/ul>
+&lt;h3 id="-ethernet-sin-gigabit-real">🌐 Ethernet sin Gigabit Real&lt;/h3>
+&lt;ul>
+&lt;li>Aunque anuncia Gigabit, el rendimiento práctico suele rondar los ~400–500 Mbps.&lt;/li>
+&lt;li>Para sincronizaciones grandes o backups remotos puede ser un cuello de botella.&lt;/li>
+&lt;/ul>
+&lt;h3 id="-ecosistema-limitado">🧱 Ecosistema Limitado&lt;/h3>
+&lt;ul>
+&lt;li>Menos soporte comunitario que Raspberry Pi.&lt;/li>
+&lt;li>Algunos paquetes requieren compilación manual o ajustes específicos.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="conclusión-operativa">Conclusión Operativa&lt;/h2>
+&lt;p>El &lt;strong>ODROID C2&lt;/strong> sigue siendo un hardware fiable para tareas ligeras, automatización, agentes OSINT y despliegues remotos con &lt;strong>DietPi&lt;/strong>.&lt;br>
+No es un equipo para cargas pesadas, pero su estabilidad, bajo consumo y silencio absoluto lo convierten en un aliado perfecto para operaciones discretas y sostenidas.&lt;/p></description></item><item><title>Bitácora Técnica: Despliegue ODROID C2</title><link>https://mcasrom.github.io/australia-blog/posts/preparativos-tecnicos-australia/</link><pubDate>Thu, 02 Apr 2026 17:30:00 +0200</pubDate><guid>https://mcasrom.github.io/australia-blog/posts/preparativos-tecnicos-australia/</guid><description>&lt;h2 id="guía-rápida-de-comandos-cli">Guía Rápida de Comandos (CLI)&lt;/h2>
 &lt;p>Para no olvidar la gestión del sistema durante el viaje, estos son los alias activos:&lt;/p>
 &lt;h3 id="red-y-seguridad">Red y Seguridad&lt;/h3>
 &lt;ul>
